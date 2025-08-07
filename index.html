@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Site - Microsoft</title>
+</head>
+
+<body>
+    <!-- Cabeçalho/Navegação -->
+    <header>
+        <ul>
+            <li>
+                <img src="./assets/logo.png" alt="logo">
+            </li>
+            <li>Microsoft</li>
+            <li>Teams</li>
+            <li>Copilot</li>
+            <li>Windows</li>
+            <li>Xbox</li>
+            <li>Suporte</li>
+        </ul>
+
+        <ul>
+            <!-- Dropdown "Toda a Microsoft" -->
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-transparent text-black border-0" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Toda a Microsoft
+                    </button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item" href="#">Software</a></li>
+                            <li><a class="dropdown-item" href="#">PCs e dispositivos</a></li>
+                            <li><a class="dropdown-item" href="#">Entretenimento</a></li>
+                            <li><a class="dropdown-item" href="#">Negócios</a></li>
+                            <li><a class="dropdown-item" href="#">Desenvolvedor & it</a></li>
+                            <li><a class="dropdown-item" href="#">Outros</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- Ícone de pesquisa -->
+            <li>
+                <svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <path
+                        d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z" />
+                </svg>
+            </li>
+
+            <!-- Ícone de carrinho -->
+            <li>
+                <svg width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="icomoon-ignore">
+                    </g>
+                    <path
+                        d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                        fill="#000000">
+
+                    </path>
+                </svg>
+            </li>
+
+            <!-- Ícone de perfil -->
+            <li>
+                <svg width="25px" height="25px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.5 0.875C5.49797 0.875 3.875 2.49797 3.875 4.5C3.875 6.15288 4.98124 7.54738 6.49373 7.98351C5.2997 8.12901 4.27557 8.55134 3.50407 9.31167C2.52216 10.2794 2.02502 11.72 2.02502 13.5999C2.02502 13.8623 2.23769 14.0749 2.50002 14.0749C2.76236 14.0749 2.97502 13.8623 2.97502 13.5999C2.97502 11.8799 3.42786 10.7206 4.17091 9.9883C4.91536 9.25463 6.02674 8.87499 7.49995 8.87499C8.97317 8.87499 10.0846 9.25463 10.8291 9.98831C11.5721 10.7206 12.025 11.8799 12.025 13.5999C12.025 13.8623 12.2376 14.0749 12.5 14.0749C12.7623 14.075 12.975 13.8623 12.975 13.6C12.975 11.72 12.4778 10.2794 11.4959 9.31166C10.7244 8.55135 9.70025 8.12903 8.50625 7.98352C10.0187 7.5474 11.125 6.15289 11.125 4.5C11.125 2.49797 9.50203 0.875 7.5 0.875ZM4.825 4.5C4.825 3.02264 6.02264 1.825 7.5 1.825C8.97736 1.825 10.175 3.02264 10.175 4.5C10.175 5.97736 8.97736 7.175 7.5 7.175C6.02264 7.175 4.825 5.97736 4.825 4.5Z"
+                        fill="#000000" />
+                </svg>
+            </li>
+        </ul>
+    </header>
+
+    <!-- SESSÃO 1 - BANNERS  -->
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./assets/copilot.png" class="d-block w-100">
+
+                    <div class="carousel-content">
+                        <h2>O Copilot é seu companheiro de IA</h2>
+                        <p>Sempre ao seu lado, pronto para apoiá-lo quando e onde você precisar.</p>
+                        <button>Baixe o aplicativo Copilot</button>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/microsoft-365.png" class="d-block w-100">
+
+                    <div class="carousel-content">
+                        <h2>Alcance o extraordinário</h2>
+                        <p>O Microsoft 365 oferece armazenamento em nuvem, segurança e o Microsoft Copilot em seus
+                            aplicativos favoritos—tudo em um único plano.</p>
+                        <button>Compre o Microsoft 365</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SESSÃO 1.1 - LINKS -->
+    <section class="links">
+        <div>
+            <img src="./assets/logo-windows.svg">
+            <a href="#">Escolha o seu Microsoft 365</a>
+        </div>
+
+        <div>
+            <img src="./assets/logo-xbox.svg">
+            <a href="#">Escolha o seu Xbox</a>
+        </div>
+
+        <div>
+            <img src="./assets/logo-windows.svg">
+            <a href="#">Comprar o Windows 11</a>
+        </div>
+    </section>
+
+    <!-- SESSÃO 2  CARDS -->
+    <section class="container-cards">
+
+        <div class="wrapper-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/xbox-series-x.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Xbox Series X</h3>
+                        <p>O Xbox está ainda mais rápido e poderoso.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar Xbox Series X</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/xbox-series-s.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Xbox Series S</h3>
+                        <p>Desempenho de última geração no menor de todos os Xbox.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Comprar Xbox Series S</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/microsoft-edge.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Microsoft Edge</h3>
+                        <p>Desempenho excepcional com mais privacidade, mais velocidade e mais qualidade durante a
+                            navegação.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Baixe agora</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/microsoft-bing.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Aproxime o mundo com o Papel de Parede do Bing</h3>
+                        <p>Baixe o aplicativo gratuito e aproveite vistas deslumbrantes com um plano de fundo novo todos
+                            os dias.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Obtenha o papel de parede do bing</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SESSÃO 3 - BANNER -->
+    <section class="banner">
+        <img src="./assets/gamepass.png" alt="gamepass">
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title">Xbox Game Pass Ultimate</h5>
+                <p class="card-text">Jogue novos títulos desde o primeiro dia. Aproveite centenas de jogos de alta
+                    qualidade para jogar com amigos no console, no PC ou na nuvem.</p>
+                <a href="#" class="btn btn-primary">Particpe agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SESSÃO 4 - CARDS 2.0 -->
+    <div class="title-business">
+        <div>
+            <h3>Para negócios</h3>
+        </div>
+
+    </div>
+
+    <section class=" container-cards">
+
+        <div class="wrapper-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/copilot-2.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Microsoft 365 Copilot</h3>
+                        <p>Com a IA no Microsoft 365 para empresas, você poupa tempo e se concentra no que realmente
+                            importa.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/windows-365.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>20% de desconto no Windows 365</h3>
+                        <p>Experimente a produtividade contínua com o Windows 365 Cloud PC, que oferece a
+                            experiência
+                            completa do Windows em qualquer dispositivo.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/microsoft-ia.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Entre na era da IA</h3>
+                        <p>Crie, comunique e codifique com as soluções de IA da Microsoft.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Explore as soluções de IA</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/microsoft-teams.png" class="card-img-top">
+                <div class="card-body">
+                    <div>
+                        <h3>Microsoft Teams</h3>
+                        <p>Reuniões, chat, colaboração em tempo real e armazenamento em nuvem compartilhado.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Veja o melhor plano</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SESSÃO 5 - SOCIAL MEDIA -->
+    <section class="social-media">
+        <div>
+            <ul>
+                <li>
+                    <p>Siga a Microsoft</p>
+                </li>
+                <li>
+                    <img src="./assets/facebook.png" alt="facebook-icon">
+                </li>
+                <li>
+                    <img src="./assets/twitter.png" alt="twitter-icon">
+                </li>
+                <li>
+                    <img src="./assets/youTube.png" alt="youTube-icon">
+                </li>
+                <li>
+                    <img src="./assets/instagram.png" alt="instagram-icon">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- BOTÃO VOLTAR CIMA -->
+    <div class="btn-start">
+        <a href="#">
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1"
+                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>arrow-line</title>
+                <path
+                    d="M27.66,15.61,18,6,8.34,15.61A1,1,0,1,0,9.75,17L17,9.81V28.94a1,1,0,1,0,2,0V9.81L26.25,17a1,1,0,0,0,1.41-1.42Z"
+                    class="clr-i-outline clr-i-outline-path-1"></path>
+                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+            </svg>
+            Voltar para cima
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <!-- Lista de links do rodapé organizados por categoria -->
+        <ul>
+            <li class="bold">Novidades</li>
+            <li>Microsoft Copilot</li>
+            <li>Microsoft 365</li>
+            <li>Explorar os produtos da Microsoft</li>
+            <li>Aplicativos do Windows 11</li>
+        </ul>
+        <ul>
+            <li class="bold">Microsoft Store</li>
+            <li>Perfil da conta</li>
+            <li>Centro de Download</li>
+            <li>Suporte da Microsoft Store</li>
+            <li>Devoluções</li>
+            <li>Acompanhamento de pedidos</li>
+        </ul>
+        <ul>
+            <li class="bold">Educação</li>
+            <li>Microsoft Education</li>
+            <li>Dispositivos para educação</li>
+            <li>Microsoft Teams para Educação</li>
+            <li>Microsoft 365 Education</li>
+            <li>Office Education</li>
+            <li>Treinamento e desenvolvimento de educadores</li>
+            <li>Ofertas para estudantes e pais</li>
+            <li>Azure para estudantes</li>
+        </ul>
+        <ul>
+            <li class="bold">Negócios</li>
+            <li>Microsoft Cloud</li>
+            <li>Segurança da Microsoft</li>
+            <li>Azure</li>
+            <li>Dynamics 365</li>
+            <li>Microsoft 365</li>
+            <li>Microsoft Advertising</li>
+            <li>Microsoft 365 Copilot</li>
+            <li>Microsoft Teams</li>
+        </ul>
+        <ul>
+            <li class="bold">Desenvolvedor e TI</li>
+            <li>Desenvolvedor Microsoft</li>
+            <li>Microsoft Learn</li>
+            <li>Suporte para aplicativos de marketplace de IA</li>
+            <li>Comunidade Microsoft Tech</li>
+            <li>Azure Marketplace</li>
+            <li>AppSource</li>
+            <li>Microsoft Power Platform</li>
+            <li>Visual Studio</li>
+        </ul>
+        <ul>
+            <li class="bold">Empresa</li>
+            <li>Carreiras</li>
+            <li>Sobre a Microsoft</li>
+            <li>Notícias da empresa</li>
+            <li>Privacidade na Microsoft</li>
+            <li>Investidores</li>
+            <li>Diversidade e inclusão</li>
+            <li>Acessibilidade</li>
+            <li>Sustentabilidade</li>
+        </ul>
+
+    </footer>
+
+    <!-- Importação do JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

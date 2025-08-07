@@ -1,0 +1,302 @@
+/* Reset geral para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+
+/* Tamanho do logo no cabeçalho */
+header img {
+    height: 36px;
+    margin: 16px 10px;
+}
+
+/* Alinhamento das listas de navegação */
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+}
+
+/* Estilo dos itens do menu */
+header li {
+    cursor: pointer;
+    color: #262626;
+}
+
+/* Posicionamento do texto sobre o carrossel */
+.carousel-content {
+    position: absolute;
+    top: 60px;
+    width: 30%;
+    margin-left: 5%;
+}
+
+/* Estilo do título do carrossel */
+.carousel-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estilo do parágrafo do carrossel */
+.carousel-content p {
+    font-size: 1.2rem;
+}
+
+/* Estilo do botão do carrossel */
+.carousel-content button {
+    background-color: #0067b8;
+    color: #fff;
+    padding: 10px 12px;
+    font-weight: 500;
+    border: none;
+}
+
+/* Estilo dos botões de controle (setas) do carrossel */
+.slide .carousel-control-prev,
+.carousel-control-next {
+    background-color: #000;
+    height: 60px;
+    width: 30px;
+    top: 55%;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* Seção de links rápidos (abaixo do banner) */
+.links {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 80px 0;
+}
+
+/* Layout de cada item de link */
+.links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tamanho do ícone do link */
+.links div img {
+    height: 40px;
+}
+
+/* Estilo do texto do link */
+.links div a {
+    color: #0067b8;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Container principal para os cards */
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5%;
+}
+
+/* Estilo interno dos cards */
+.container-cards .wrapper-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* Estilo de cada card de produto */
+.wrapper-cards .card {
+    flex-grow: 1;
+    border-radius: 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+}
+
+/* Estilo de cada card de produto */
+.wrapper-cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Espaçamento do texto no card */
+.wrapper-cards .card .card-body p {
+    margin-top: 10px;
+}
+
+/* Estilo customizado para o botão */
+.btn.btn-primary {
+    border: none;
+    border-radius: 0;
+    background-color: #0067b8;
+}
+
+/* Seção do banner secundário */
+.banner {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+/* Imagem do banner */
+.banner img {
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* Card de texto sobreposto ao banner */
+.banner .card {
+    position: absolute;
+    left: 13%;
+    border-radius: 0;
+    border: none;
+    padding: 30px;
+}
+
+/* Título no card do banner */
+.banner .card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+/* Título da seção 'Para Negócios' */
+.title-business {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+/* Controle de largura do título */
+.title-business div {
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* Estilo do texto do título */
+.title-business div h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+/* Seção de redes sociais */
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+/* Controle de largura da seção de redes sociais */
+.social-media div {
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* Alinhamento dos ícones sociais */
+.social-media ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 60px 0;
+    gap: 20px;
+}
+
+/* Estilo dos itens da lista social */
+.social-media li {
+    cursor: pointer;
+}
+
+/* Estilo do texto 'Siga a Microsoft' */
+.social-media p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Tamanho dos ícones sociais */
+.social-media img {
+    width: 34px;
+}
+
+/* Botão fixo 'Voltar para cima' */
+.btn-start {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: sticky;
+    /* Faz o botão "grudar" na tela ao rolar */
+    bottom: 20px;
+}
+
+/* Estilo do link do botão 'Voltar para cima' */
+.btn-start a {
+    cursor: pointer;
+    padding: 0.6rem 0.75rem;
+    background: rgba(0, 0, 0, .15);
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilização do rodapé */
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+}
+
+/* Colunas de links no rodapé */
+footer ul {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Título das colunas do rodapé */
+footer ul .bold {
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: text;
+}
+
+/* Itens de link no rodapé */
+footer ul li {
+    color: #616161;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse nos links */
+footer ul li:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Remove o efeito de hover dos títulos */
+footer ul .bold:hover {
+    color: #616161;
+    text-decoration: none;
+}
